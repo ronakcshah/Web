@@ -1,6 +1,6 @@
 # Getting Started
 
-### Base code for Springboot and Angular (See Web folder)
+### Base code for Springboot 2 and Angular 9 (See Web folder)
 
 ##### Guides
 The following guides illustrate how to use some features concretely:
