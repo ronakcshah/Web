@@ -1,0 +1,54 @@
+
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+/.idea
+*.iws
+*.iml
+*.ipr
+SpringBoot.iml
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+### VS Code ###
+.vscode/
+
+### VS Code ###
+.mvn
+mvnw
+mvnw.cmd
+
+### Angular Exclusions ###
+web/.idea/
+web/node_modules/
+web/node_modules
+web/dist/
+web/dist
+web/dist-server
+web/tmp
+web/out-tsc
+
+# e2e
+web/e2e/*.js
+web/e2e/*.map
