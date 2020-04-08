@@ -1,0 +1,12 @@
+.myIcon {
+  padding: 0 14px;
+  font-size: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav-container {
+  background-color: aliceblue;
+}
