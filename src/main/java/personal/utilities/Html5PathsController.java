@@ -1,4 +1,4 @@
-package com.insightly.test.utilities;
+package personal.utilities;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

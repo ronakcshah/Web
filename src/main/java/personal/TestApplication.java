@@ -1,4 +1,4 @@
-package com.insightly.test;
+package personal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

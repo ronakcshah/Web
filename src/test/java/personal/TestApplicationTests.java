@@ -1,4 +1,4 @@
-package com.insightly.test;
+package personal;
 
 import org.junit.Before;
 import org.junit.Test;
