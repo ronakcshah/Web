@@ -22,6 +22,7 @@ public class TestApplicationTests {
     @LocalServerPort
     private int port;
 
+    //URL
     private URL base;
 
     @Autowired
