@@ -1,6 +1,6 @@
 <div style="height:100vh;width:100vw;">
   <!-- Container -->
-  <mat-sidenav-container fxFlexFill>
+  <mat-sidenav-container>
 
     <!-- Sidenav -->
     <mat-sidenav #sidenav mode="side">
@@ -16,16 +16,16 @@
     </mat-sidenav>
 
     <!-- Sidenav Body -->
-    <mat-sidenav-content fxFlexFill>
+    <mat-sidenav-content>
       <!-- Navbar -->
       <mat-toolbar color="primary">
         <mat-toolbar-row>
-          <button (click)="sidenav.toggle()" fxHide.gt-sm fxShow="true" mat-icon-button>
+          <button (click)="sidenav.toggle()" mat-icon-button>
             <mat-icon>menu</mat-icon>
           </button>
           <span class="me" routerLink="/home">Ron Shah</span>
           <span class="spacer"></span>
-          <div fxHide.lt-md="true" fxShow="true">
+          <div>
             <!-- The following menu items will be hidden on both SM and XS screen sizes -->
             <a mat-button routerLink="/home">Home</a>
             <a mat-button routerLink="/about">About</a>

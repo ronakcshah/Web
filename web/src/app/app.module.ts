@@ -5,9 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CdkTableModule} from '@angular/cdk/table';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {FormsModule} from '@angular/forms';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 /* Components */
 import {AppComponent} from './app.component';
 import {HomeComponent} from './components/home/home.component';
@@ -35,14 +33,12 @@ import {TestDirectiveDirective} from './directives/test-directive.directive';
     BrowserAnimationsModule,
     CdkTableModule,
     HttpClientModule,
-    FlexLayoutModule,
     FormsModule,
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
     MatButtonModule,
-    MatListModule,
-    NgbModule
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
