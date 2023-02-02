@@ -131,7 +131,6 @@
       }
     }
   },
-  "defaultProject": "pie-in-the-sky",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
