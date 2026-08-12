@@ -1,29 +1,34 @@
+# OS
 .DS_Store
+Thumbs.db
+
+# Maven
 /target/
 !.mvn/wrapper/maven-wrapper.jar
+.mvn
+mvnw
+mvnw.cmd
 
-### STS ###
+# Generated Angular output served by Spring Boot
+/src/main/resources/public/
+
+# STS / Eclipse
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-/.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 SpringBoot.iml
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -31,24 +36,25 @@ SpringBoot.iml
 /.nb-gradle/
 /build/
 
-### VS Code ###
+# VS Code / Cursor
 .vscode/
+.history/
 
-### VS Code ###
-.mvn
-mvnw
-mvnw.cmd
+# Other editors
+.c9/
+*.launch
+*.sublime-workspace
 
-### Angular Exclusions ###
-web/.idea/
+# Angular
 web/node_modules/
-web/node_modules
+web/.angular/
 web/dist/
-web/dist
-web/dist-server
-web/tmp
-web/out-tsc
-
-# e2e
-web/e2e/*.js
-web/e2e/*.map
+web/tmp/
+web/out-tsc/
+web/coverage/
+web/.sass-cache/
+web/connect.lock
+web/libpeerconnection.log
+web/typings/
+npm-debug.log
+yarn-error.log

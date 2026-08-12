@@ -1,3 +1,29 @@
+.app-shell,
+.app-container {
+  height: 100%;
+}
+
+.app-sidenav {
+  width: 240px;
+}
+
+.app-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-host {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.page-host > *:not(router-outlet) {
+  display: block;
+  min-height: 100%;
+}
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -5,4 +31,10 @@
 .me {
   padding: 0 14px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.toolbar-links {
+  display: flex;
+  align-items: center;
 }

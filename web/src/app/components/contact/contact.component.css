@@ -1,6 +1,13 @@
-.contactComponent {
+:host {
+  display: block;
   height: 100%;
+}
+
+.contactComponent {
+  box-sizing: border-box;
+  min-height: 100%;
   width: 100%;
+  padding: 2rem;
   background-color: darkgrey;
   text-align: center;
 }

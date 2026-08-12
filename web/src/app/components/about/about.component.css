@@ -1,6 +1,13 @@
-.aboutComponent {
+:host {
+  display: block;
   height: 100%;
+}
+
+.aboutComponent {
+  box-sizing: border-box;
+  min-height: 100%;
   width: 100%;
+  padding: 2rem;
   background-color: aqua;
   text-align: center;
 }
