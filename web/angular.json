@@ -65,7 +65,8 @@
             "buildTarget": "webapp:build",
             "liveReload": true,
             "hmr": true,
-            "poll": 1000
+            "poll": 1000,
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {

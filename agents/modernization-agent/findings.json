@@ -1,0 +1,66 @@
+[
+  {
+    "id": "backend-actuator-exposure",
+    "title": "Actuator endpoint exposure not configured explicitly",
+    "filePath": "src/main/resources/application.properties",
+    "description": "The project includes spring-boot-starter-actuator, but application.properties does not set management.endpoints.web.exposure.include to a specific, minimal list. The standard requires explicit actuator exposure rather than relying on framework defaults.",
+    "severity": "high",
+    "standard": "Backend 3: Actuator endpoint exposure must be explicit"
+  },
+  {
+    "id": "backend-xss-reflected-input",
+    "title": "User input reflected unsanitized in API response",
+    "filePath": "src/main/java/personal/controller/SimpleController.java",
+    "description": "The POST /data handler concatenates the raw request body into the HTTP response string without encoding or validation. A client that renders this response as HTML could be vulnerable to reflected XSS.",
+    "severity": "medium",
+    "standard": "Backend 4: Security Reviews"
+  },
+  {
+    "id": "backend-insecure-request-logging",
+    "title": "Request body logged to stdout",
+    "filePath": "src/main/java/personal/controller/SimpleController.java",
+    "description": "The POST /data handler writes the full request body to System.out.println, which can expose sensitive submitted data in application logs.",
+    "severity": "medium",
+    "standard": "Backend 4: Security Reviews"
+  },
+  {
+    "id": "frontend-standalone-app-component",
+    "title": "AppComponent is not standalone",
+    "filePath": "web/src/app/app.component.ts",
+    "description": "AppComponent is declared with standalone: false and is registered in AppModule declarations instead of using standalone: true.",
+    "severity": "medium",
+    "standard": "Frontend 1: Components should be standalone"
+  },
+  {
+    "id": "frontend-standalone-home-component",
+    "title": "HomeComponent is not standalone",
+    "filePath": "web/src/app/components/home/home.component.ts",
+    "description": "HomeComponent is declared with standalone: false and is registered in AppModule declarations instead of using standalone: true.",
+    "severity": "medium",
+    "standard": "Frontend 1: Components should be standalone"
+  },
+  {
+    "id": "frontend-standalone-about-component",
+    "title": "AboutComponent is not standalone",
+    "filePath": "web/src/app/components/about/about.component.ts",
+    "description": "AboutComponent is declared with standalone: false and is registered in AppModule declarations instead of using standalone: true.",
+    "severity": "medium",
+    "standard": "Frontend 1: Components should be standalone"
+  },
+  {
+    "id": "frontend-standalone-contact-component",
+    "title": "ContactComponent is not standalone",
+    "filePath": "web/src/app/components/contact/contact.component.ts",
+    "description": "ContactComponent is declared with standalone: false and is registered in AppModule declarations instead of using standalone: true.",
+    "severity": "medium",
+    "standard": "Frontend 1: Components should be standalone"
+  },
+  {
+    "id": "frontend-pii-console-log",
+    "title": "Contact form data logged to browser console",
+    "filePath": "web/src/app/components/contact/contact.component.ts",
+    "description": "onSubmit logs the entire form value object to console.log. The User model includes email and password fields, so submitted PII can leak to the browser console.",
+    "severity": "medium",
+    "standard": "Frontend 3: Security Reviews"
+  }
+]

@@ -1,3 +1,5 @@
 <div class="homeComponent">
-  <a>Home Page Content</a>
+  <p *ngIf="loading">Loading greeting from API...</p>
+  <p *ngIf="!loading && greeting">{{ greeting }}</p>
+  <p *ngIf="!loading && error" class="api-error">{{ error }}</p>
 </div>

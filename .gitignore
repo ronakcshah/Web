@@ -58,3 +58,6 @@ web/libpeerconnection.log
 web/typings/
 npm-debug.log
 yarn-error.log
+
+# Cursor SDK agents
+agents/**/node_modules/

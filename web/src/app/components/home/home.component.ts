@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from "@angular/router";
+import {ApiService} from '../../service/api.service';
 
 @Component({
     selector: 'app-home',
@@ -9,8 +9,24 @@ import {Router} from "@angular/router";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  greeting = '';
+  error = '';
+  loading = true;
 
-  ngOnInit() { }
+  constructor(private api: ApiService) {
+  }
+
+  ngOnInit() {
+    this.api.getUser().subscribe({
+      next: (text) => {
+        this.greeting = text;
+        this.loading = false;
+      },
+      error: (err) => {
+        this.error = err?.message || 'Failed to reach the API';
+        this.loading = false;
+      }
+    });
+  }
 
 }
